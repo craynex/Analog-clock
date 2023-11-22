@@ -1,0 +1,116 @@
+/* Fonts and colors */*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      color: white
+}
+
+/* Makes the color for the background */
+body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #212121;
+}
+
+/* Position for the div class "Clock" */
+.clock{
+      position: relative;
+}
+
+/* Specifies the position for the frame of the clock */
+.outer-clock-face{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+
+}
+
+
+/* Makes the inner point of the clock */
+.inner-clock-face{
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #fff;
+      z-index: 10;
+}
+
+
+/* Hour hand */
+.hour-hand {
+      --rotation: 0; /* The rotation of the hand */
+      position: absolute;
+      background-color: #877e7e;
+      top: -1075%;
+      right: 21%;
+      width: 4px;
+      height: 90px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-origin: bottom;
+      transform: rotate(calc(var(--rotation) * 1deg));
+}
+
+/* Minute hand */
+.min-hand {
+      --rotation: 0; /* The rotation of the hand */
+      position: absolute;
+      background-color: #fff;
+      top: -1330%;
+      right: 21%;
+      width: 4px;
+      height: 110px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-origin: bottom;
+      transform: rotate(calc(var(--rotation) * 1deg));
+      z-index: 10;
+}
+
+  
+/* Second hand */
+.second-hand {
+      --rotation: 0; /* The rotation of the hand */
+      position: absolute;
+      background-color: #e32929;
+      top: -1450%;
+      right: 21%;
+      width: 4px;
+      height: 120px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-origin: bottom;
+      transform: rotate(calc(var(--rotation) * 1deg));
+      z-index: 15;
+}
+
+/* Shows the numbers of the clock*/
+.clock-number {
+      position: absolute;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+      transform-origin: bottom;
+      top: -280%;
+      left: -60%;
+      transform: translate(-50%, -50%);
+    }
+    
