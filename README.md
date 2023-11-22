@@ -4,7 +4,7 @@ This project is a simple analog clock implemented using HTML, CSS, and JavaScrip
 
 ## Preview
 
-![Analog Clock Preview](link_to_preview_image.png)
+![Analog Clock Preview](https://github.com/craynex/Analog-clock/blob/main/Images/Screenshot%202023-11-22%20125920.png)
 
 ## Features
 
